@@ -1,5 +1,5 @@
 xhost +local:root
 clear
-docker run --rm -it --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/data/:/data/ demon /bin/bash
+docker run --rm -it --workdir="/data" --hostname=demon --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/data/:/data/ demon /bin/bash
 xhost -local:root
 clear
