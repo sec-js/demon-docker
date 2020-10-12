@@ -1,3 +1,1 @@
-xhost +local:root
-docker run --rm --workdir="/root" --hostname=demon --net=host --privileged -e DISPLAY -v /home/demon/:/root/ demon xfce4-terminal
-xhost -local:root
+xhost +local:root && docker run --rm --workdir="/root" --hostname=demon --net=host --privileged -e DISPLAY -v /home/demon/:/root/ demon xfce4-terminal && xhost -local:root
