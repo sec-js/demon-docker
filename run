@@ -1,5 +1,3 @@
 xhost +local:root
-clear
-docker run --rm -it --workdir="/data" --hostname=demon --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/data/:/data/ demon /bin/bash
+docker run --rm --workdir="/data" --hostname=demon --net=host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority -v $(pwd)/data/:/data/ demon xfce4-terminal
 xhost -local:root
-clear
