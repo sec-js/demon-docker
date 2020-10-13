@@ -129,6 +129,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias burpsuite='java -jar /usr/bin.burpsuite'
+alias burpsuite='java -jar /usr/bin/burpsuite'
 alias google-chrome='google-chrome --no-sandbox'
 alias chromium='chromium --no-sandbox'
