@@ -1,4 +1,3 @@
-
 FROM kalilinux/kali
 
 RUN echo "deb http://kali.download/kali kali-last-snapshot main contrib non-free" > /etc/apt/sources.list && \
