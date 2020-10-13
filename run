@@ -1,1 +1,1 @@
-xhost +local:root && docker run --rm --workdir="/root" --hostname=demon --net=host --privileged -e DISPLAY --shm-size=3992488 -v $(pwd)/root/:/root/ demon xfce4-terminal && xhost -local:root
+xhost +local:root && docker run --rm --shm-size=4g --workdir="/root" --hostname=demon --net=host --privileged -e DISPLAY -v $(pwd)/root/:/root/ demon xfce4-terminal && xhost -local:root
