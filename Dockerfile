@@ -8,7 +8,7 @@ RUN echo "deb http://kali.download/kali kali-last-snapshot main contrib non-free
    p7zip-full p7zip-rar p7zip \
    net-tools build-essential iputils-ping pciutils bash-completion \
    kali-linux-large scrcpy firefox-esr chromium xfce4-terminal && \
-   wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - && apt-get -y install apt-transport-https && echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get -y update && sudo apt-get -y install sublime-text && \
+   wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - && apt-get -y install apt-transport-https && echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get -y update && sudo apt-get -y install sublime-text && rm -rf sublimehq-pub.gpg && \
    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm -rf google-chrome-stable_current_amd64.deb && \
    apt-get -y autoremove && \
    apt-get -y clean
